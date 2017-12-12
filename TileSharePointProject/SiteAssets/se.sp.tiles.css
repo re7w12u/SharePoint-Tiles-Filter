@@ -1,0 +1,145 @@
+﻿
+#tile-filter {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border: 1px solid rgba(255,255,225, 0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+    #tile-filter input {
+        float: left;
+        margin-top: 0px;
+        width: 500px;
+    }
+
+    #tile-filter h2 {
+        float: left;
+        margin-top: 0px;
+        margin-right: 10px;
+    }
+
+.clear {
+    clear: both;
+}
+
+
+/**** animation upon filter - change width, height and opacity*/
+@keyframes hide {
+    0% {
+        opacity: 1;
+        width: 150px;
+        height: 150px;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+
+    100% {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@-webkit-keyframes hide {
+    0% {
+        opacity: 1;
+        width: 150px;
+        height: 150px;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+.tile.ng-hide-remove {
+    -webkit-animation: 0.5s show;
+    animation: 0.5s show;
+}
+
+    .tile.ng-hide-remove div {
+        -webkit-animation: 0.5s show;
+        animation: 0.5s show;
+    }
+
+        .tile.ng-hide-remove div div {
+            -webkit-animation: 0.5s show;
+            animation: 0.5s show;
+        }
+
+
+.tile.ng-hide-add {
+    animation: 0.5s hide;
+}
+
+    .tile.ng-hide-add div {
+        animation: 0.5s hide;
+    }
+
+        .tile.ng-hide-add div div {
+            animation: 0.5s hide;
+        }
+
+
+/**** animation inside the file - change top */
+.ms-tileview-tile-root:hover .ms-tileview-tile-detailsBox {
+    top: 0px;
+}
+
+.ms-tileview-tile-detailsBox {
+    top: 100px;
+    transition-property: top;
+    transition-timing-function: linear;
+    transition-duration: 0.2s;
+}
+
+    .ms-tileview-tile-detailsBox:hover {
+        top: 0px;
+    }

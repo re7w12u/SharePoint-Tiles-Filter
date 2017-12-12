@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SiteAssets">
+    <File Path="SiteAssets\CreateListItem.htm" Url="SiteAssets/CreateListItem.htm" />
+    <File Path="SiteAssets\sp-bootstrap.min.css" Url="SiteAssets/sp-bootstrap.min.css" />
+    <File Path="SiteAssets\angular-animate.min.js" Url="SiteAssets/angular-animate.min.js" />
+    <File Path="SiteAssets\angular.min.js" Url="SiteAssets/angular.min.js" />
+    <File Path="SiteAssets\jquery.js" Url="SiteAssets/jquery.js" />
+    <File Path="SiteAssets\se.sp.tiles.js" Url="SiteAssets/se.sp.tiles.js" />
+    <File Path="SiteAssets\se.sp.tiles.css" Url="SiteAssets/se.sp.tiles.css" />
+  </Module>
+</Elements>
