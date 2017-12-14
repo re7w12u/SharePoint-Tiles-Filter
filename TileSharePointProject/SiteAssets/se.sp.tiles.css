@@ -129,17 +129,19 @@
 
 
 /**** animation inside the file - change top */
-.ms-tileview-tile-root:hover .ms-tileview-tile-detailsBox {
-    top: 0px;
-}
 
-.ms-tileview-tile-detailsBox {
+
+.sp-bootstrap .ms-tileview-tile-detailsBox {
     top: 100px;
     transition-property: top;
     transition-timing-function: linear;
     transition-duration: 0.2s;
 }
 
-    .ms-tileview-tile-detailsBox:hover {
-        top: 0px;
-    }
+.sp-bootstrap .ms-tileview-tile-root:hover .ms-tileview-tile-detailsBox {
+    top: 0px;
+}
+
+.sp-bootstrap .ms-tileview-tile-detailsBox:hover {
+    top: 0px;
+}

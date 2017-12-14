@@ -57,25 +57,25 @@ namespace TileSharePointProject.VisualWebPart1 {
             "artCodeGenerator", "12.0.0.0")]
         private void @__Render__control1(System.Web.UI.HtmlTextWriter @__w, System.Web.UI.Control parameterContainer) {
             @__w.Write("\r\n\r\n<link rel=\"stylesheet\" href=\"");
-                     @__w.Write( SPContext.Current.Web.Url );
+                     @__w.Write( SPContext.Current.Site.Url );
 
             @__w.Write("/SiteAssets/sp-bootstrap.min.css\" type=\"text/css\" />\r\n<link rel=\"stylesheet\" href" +
                     "=\"");
-                     @__w.Write( SPContext.Current.Web.Url );
+                     @__w.Write( SPContext.Current.Site.Url );
 
             @__w.Write("/SiteAssets/se.sp.tiles.css\" type=\"text/css\" />\r\n\r\n<script type=\"text/javascript\"" +
                     " src=\"");
-                            @__w.Write( SPContext.Current.Web.Url );
+                            @__w.Write( SPContext.Current.Site.Url );
 
             @__w.Write("/SiteAssets/jquery.js\"></script>\r\n<script type=\"text/javascript\" src=\"");
-                            @__w.Write( SPContext.Current.Web.Url );
+                            @__w.Write( SPContext.Current.Site.Url );
 
             @__w.Write("/SiteAssets/angular.min.js\"></script>\r\n<script type=\"text/javascript\" src=\"");
-                            @__w.Write( SPContext.Current.Web.Url );
+                            @__w.Write( SPContext.Current.Site.Url );
 
             @__w.Write("/SiteAssets/angular-animate.min.js\"></script>\r\n<script type=\"text/javascript\" src" +
                     "=\"");
-                            @__w.Write( SPContext.Current.Web.Url );
+                            @__w.Write( SPContext.Current.Site.Url );
 
             @__w.Write("/SiteAssets/se.sp.tiles.js\"></script>\r\n\r\n<script type=\"text/javascript\">\r\n    var" +
                     " filterListName = \"");

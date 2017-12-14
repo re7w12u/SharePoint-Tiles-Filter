@@ -7,13 +7,13 @@
 <%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="VisualWebPart1.ascx.cs" Inherits="TileSharePointProject.VisualWebPart1.VisualWebPart1" %>
 
-<link rel="stylesheet" href="<%= SPContext.Current.Web.Url %>/SiteAssets/sp-bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" href="<%= SPContext.Current.Web.Url %>/SiteAssets/se.sp.tiles.css" type="text/css" />
+<link rel="stylesheet" href="<%= SPContext.Current.Site.Url %>/SiteAssets/sp-bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="<%= SPContext.Current.Site.Url %>/SiteAssets/se.sp.tiles.css" type="text/css" />
 
-<script type="text/javascript" src="<%= SPContext.Current.Web.Url %>/SiteAssets/jquery.js"></script>
-<script type="text/javascript" src="<%= SPContext.Current.Web.Url %>/SiteAssets/angular.min.js"></script>
-<script type="text/javascript" src="<%= SPContext.Current.Web.Url %>/SiteAssets/angular-animate.min.js"></script>
-<script type="text/javascript" src="<%= SPContext.Current.Web.Url %>/SiteAssets/se.sp.tiles.js"></script>
+<script type="text/javascript" src="<%= SPContext.Current.Site.Url %>/SiteAssets/jquery.js"></script>
+<script type="text/javascript" src="<%= SPContext.Current.Site.Url %>/SiteAssets/angular.min.js"></script>
+<script type="text/javascript" src="<%= SPContext.Current.Site.Url %>/SiteAssets/angular-animate.min.js"></script>
+<script type="text/javascript" src="<%= SPContext.Current.Site.Url %>/SiteAssets/se.sp.tiles.js"></script>
 
 <script type="text/javascript">
     var filterListName = "<%= ListName %>";

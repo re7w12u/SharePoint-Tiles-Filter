@@ -33,7 +33,7 @@ namespace TileSharePointProject.VisualWebPart1
         #region custom properties
 
         // Create a custom category in the property sheet.
-        [Category("Custom Parameters")]
+        [Category("Schneider")]
         // Property is available in both Personalization
         // and Customization mode.
         [Personalizable(PersonalizationScope.Shared)]
@@ -48,7 +48,7 @@ namespace TileSharePointProject.VisualWebPart1
         public string ListName { get; set; }
 
         // Create a custom category in the property sheet.
-        [Category("Custom Parameters")]
+        [Category("Schneider")]
         // Property is available in both Personalization
         // and Customization mode.
         [Personalizable(PersonalizationScope.Shared)]
