@@ -84,7 +84,10 @@ namespace TileSharePointProject.VisualWebPart1 {
             @__w.Write("\";\r\n    var defaultImgPath = \"");
                   @__w.Write( ImgPath );
 
-            @__w.Write(@""";
+            @__w.Write("\";\r\n    var orderByDesc = Boolean.parse(\"");
+                             @__w.Write( OrderByDesc);
+
+            @__w.Write(@""");
 </script>
 
 <div ng-app=""FilterModule"" class=""sp-bootstrap"">
@@ -96,7 +99,7 @@ namespace TileSharePointProject.VisualWebPart1 {
         </div>
 
         <div id=""tile-wrapper"">
-            <tile ng-repeat=""x in tiles"" text=""x.Title"" url=""x.LinkLocation.Url"" img=""x.BackgroundImageLocation.Url"" ng-show=""Show(x)"" class=""tile""></tile>
+            <tile ng-repeat=""x in tiles"" text=""x.Title"" url=""x.LinkLocation.Url"" img=""x.BackgroundImageLocation.Url"" description=""x.Description"" ng-show=""Show(x)"" class=""tile""></tile>
         </div>
     </div>
 </div>

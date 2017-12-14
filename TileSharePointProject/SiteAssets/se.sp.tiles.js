@@ -13,7 +13,8 @@ function ListService($http) {
 
     this.getAllItems = function (listname) {
         if (listname != null) {
-            var url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('" + listname + "')/items";
+            var orderby = "?$orderby=Order".concat(orderByDesc ? "desc" : "");
+            var url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('" + listname + "')/items" + orderby;
             var request = $http({
                 url: url,
                 method: 'Get',
@@ -63,7 +64,7 @@ angular.module('FilterModule', ['ngAnimate'])
                                             <li id="Tile_WPQ2_1_5" collapsed="ms-tileview-tile-titleMedium ms-tileview-tile-titleMediumCollapsed" expanded="ms-tileview-tile-titleMedium ms-tileview-tile-titleMediumExpanded" class="ms-tileview-tile-titleMedium ms-tileview-tile-titleMediumCollapsed"> \
                                                 <div collapsed="ms-tileview-tile-titleTextMediumCollapsed" expanded="ms-tileview-tile-titleTextMediumExpanded" class="ms-tileview-tile-titleTextMediumCollapsed">{{text}}</div>\
                                             </li> \
-                                            <li title="{{text}}" id="Tile_WPQ2_1_6" class="ms-tileview-tile-descriptionMedium"></li> \
+                                            <li title="{{text}}" id="Tile_WPQ2_1_6" class="ms-tileview-tile-descriptionMedium">{{description}}</li> \
                                         </ul> \
                                     </div>\
                                 </a>\
@@ -72,6 +73,7 @@ angular.module('FilterModule', ['ngAnimate'])
             controller: ['$attrs', '$scope', function ($attrs, $scope) {
                 $scope.text = $scope.$eval($attrs.text);
                 $scope.url = $scope.$eval($attrs.url);
+                $scope.description = $scope.$eval($attrs.description);
 
                 var img = $scope.$eval($attrs.img);
                 if (img == null) $scope.img = defaultImgPath;

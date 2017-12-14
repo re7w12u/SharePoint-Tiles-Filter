@@ -62,6 +62,21 @@ namespace TileSharePointProject.VisualWebPart1
         // The accessor for this property.
         public string ImgPath { get; set; }
 
+        // Create a custom category in the property sheet.
+        [Category("Schneider")]
+        // Property is available in both Personalization
+        // and Customization mode.
+        [Personalizable(PersonalizationScope.Shared)]
+        // The caption that appears in the property sheet.
+        [WebDisplayName("Order By Desc")]
+        // The tool tip that appears when pausing the mouse pointer over
+        // the friendly name in the property pane.
+        [WebDescription("Check to order from high to low order field value")]
+        // Display the property in the property pane.
+        [WebBrowsable(true)]
+        // The accessor for this property.
+        public bool OrderByDesc { get; set; }
+
         #endregion
     }
 }

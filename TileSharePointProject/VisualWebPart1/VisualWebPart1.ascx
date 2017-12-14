@@ -18,6 +18,7 @@
 <script type="text/javascript">
     var filterListName = "<%= ListName %>";
     var defaultImgPath = "<%= ImgPath %>";
+    var orderByDesc = Boolean.parse("<%= OrderByDesc%>");
 </script>
 
 <div ng-app="FilterModule" class="sp-bootstrap">
@@ -29,7 +30,7 @@
         </div>
 
         <div id="tile-wrapper">
-            <tile ng-repeat="x in tiles" text="x.Title" url="x.LinkLocation.Url" img="x.BackgroundImageLocation.Url" ng-show="Show(x)" class="tile"></tile>
+            <tile ng-repeat="x in tiles" text="x.Title" url="x.LinkLocation.Url" img="x.BackgroundImageLocation.Url" description="x.Description" ng-show="Show(x)" class="tile"></tile>
         </div>
     </div>
 </div>
