@@ -13,8 +13,9 @@ function ListService($http) {
 
     this.getAllItems = function (listname) {
         if (listname != null) {
-            var orderby = "?$orderby=Order".concat(orderByDesc ? "desc" : "");
-            var url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('" + listname + "')/items" + orderby;
+            var orderby = "?$orderby=Order".concat(orderByDesc ? "%20desc" : "");
+            var url = _spPageContextInfo.webServerRelativeUrl + "/_api/web/lists/GetByTitle('" + listname + "')/items" + orderby;
+
             var request = $http({
                 url: url,
                 method: 'Get',
