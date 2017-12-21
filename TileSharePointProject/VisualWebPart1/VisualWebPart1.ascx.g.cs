@@ -93,7 +93,7 @@ namespace TileSharePointProject.VisualWebPart1 {
 <div ng-app=""FilterModule"" class=""sp-bootstrap"">
     <div ng-controller=""FilterController"">
         <div class=""panel"" id=""tile-filter"">
-            <h2>Filter : </h2>
+            <h2>Filter *: </h2>
             <input type=""text"" ng-model=""filter"" ng-change=""change()"" class=""form-control"" />
             <span class=""clear""></span>
         </div>

@@ -56,16 +56,16 @@ angular.module('FilterModule', ['ngAnimate'])
         return {
             restrict: "E",
             transclude: true,
-            template: '<div id="Tile_WPQ2_1_1" style="width: 160px; height: 160px;" class="ms-tileview-tile-root"> \
-                            <div id="Tile_WPQ2_1_2" style="width: 150px; height: 150px;" aria-haspopup="true" class="ms-tileview-tile-content"> \
-                                <a id="Tile_WPQ2_1_3" href="{{url}}" > \
-                                    <img src="{{img}}" ng-show="img" id="Tile_WPQ2_1_7" alt="{{text}}" onload="(event.srcElement ? event.srcElement : event.target).style.visibility = \'visible\'; SP.ScriptHelpers.resizeImageToSquareLength(this, 150)" width="150" style="visibility: visible;"> \
-                                    <div id="Tile_WPQ2_1_4" style="width: 150px; height: 150px; left: 0px;" offy="100" class="ms-tileview-tile-detailsBox"> \
+            template: '<div style="width: 160px; height: 160px;" class="ms-tileview-tile-root"> \
+                            <div style="width: 150px; height: 150px;" aria-haspopup="true" class="ms-tileview-tile-content"> \
+                                <a href="{{url}}" > \
+                                    <img ng-show="img" ng-src="{{img}}" onload="(event.srcElement ? event.srcElement : event.target).style.visibility = \'visible\'; SP.ScriptHelpers.resizeImageToSquareLength(this, 150)" height="150" class=" ms-positionRelative">\
+                                    <div style="width: 150px; height: 150px; left: 0px;" offy="100" class="ms-tileview-tile-detailsBox"> \
                                         <ul class="ms-noList ms-tileview-tile-detailsListMedium"> \
-                                            <li id="Tile_WPQ2_1_5" collapsed="ms-tileview-tile-titleMedium ms-tileview-tile-titleMediumCollapsed" expanded="ms-tileview-tile-titleMedium ms-tileview-tile-titleMediumExpanded" class="ms-tileview-tile-titleMedium ms-tileview-tile-titleMediumCollapsed"> \
+                                            <li collapsed="ms-tileview-tile-titleMedium ms-tileview-tile-titleMediumCollapsed" expanded="ms-tileview-tile-titleMedium ms-tileview-tile-titleMediumExpanded" class="ms-tileview-tile-titleMedium ms-tileview-tile-titleMediumCollapsed"> \
                                                 <div collapsed="ms-tileview-tile-titleTextMediumCollapsed" expanded="ms-tileview-tile-titleTextMediumExpanded" class="ms-tileview-tile-titleTextMediumCollapsed">{{text}}</div>\
                                             </li> \
-                                            <li title="{{text}}" id="Tile_WPQ2_1_6" class="ms-tileview-tile-descriptionMedium">{{description}}</li> \
+                                            <li title="{{text}}" class="ms-tileview-tile-descriptionMedium">{{description}}</li> \
                                         </ul> \
                                     </div>\
                                 </a>\
